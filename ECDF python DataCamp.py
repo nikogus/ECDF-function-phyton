@@ -19,19 +19,19 @@ def ecdf(data):
 
 '''
 # We also nee to read the cvs file with pandas 'iris.csv'
-which is available from scikitlearn
 
+from
 from sklearn.datasets import load_iris
 df_iris = load_iris()
 
 or alternatively
 df_iris = pd.read_csv('iris.csv')
 
-consisting on a pandas df with petal length of
+with the structure of df with petal length of
 ['setosa', 'versicolor', 'virginica']
 
 we need to define the np array corresponding to versicolor lenght
-versicolor_petal_length = df_iris[['versicolor']]
+versicolor_petal_length = df_iris[['versicolor']].values
 '''
 
 # Compute ECDF for versicolor data: x_vers, y_vers
